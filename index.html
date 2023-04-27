@@ -175,7 +175,7 @@
                     </section>
                     <section data-markdown>
                         <textarea data-template>
-                            ```scss[1|5|1-9]
+                            ```scss[1|4|1-9]
                             @mixin link-a11y($color) {
                                 &:focus-visible {
                                     border-radius: 1px;
@@ -209,7 +209,7 @@
                     </section>
                     <section data-markdown>
                         <textarea data-template>
-                            ```scss[1|5|1-9]
+                            ```scss[1|12-14]
                             @mixin my-btn($color: #fff, $bg-color: #000, $radius: 0px) {
                                 align-items: center;
                                 cursor: pointer;
@@ -226,13 +226,13 @@
                                 border-radius: $radius;
                             }
                             ```
-                            ```scss[1-3]
+                            ```scss[1-3|5-7]
                             .btn {
-                                @include my-btn(  );
+                                @include my-btn();
                             }
 
                             a {
-                                @include my-btn(  );
+                                @include my-btn(blue, orange, 18px);
                             }
                             ```
                         </textarea>
@@ -386,7 +386,7 @@
                             }
                             ```
 
-                            ```scss[1-7|1|3-5]
+                            ```scss[1-1|3-5]
                             @each $size-desktop, $size-tablet, $size-mobile in $f-sizes {
 
                               .txt-#{$size-desktop} {
@@ -396,7 +396,7 @@
                             }
                             ```
 
-                            ```scss[1|1-11]
+                            ```scss[1-11]
                             .txt-24 {
                                 font-size: 24px
 
@@ -413,9 +413,13 @@
                     </section>
                 </section>
                 <section>
+                    <h1>Merci !</h1>
+                    <br>
+                    <br>
                     <h2>Les liens utiles</h2>
-                    <a href="https://sass-lang.com/documentation/">Sass Documentation</a>
-                    <a href="https://github.com/ChrisGibe/til/blob/main/scss/mixin-breakpoint.md">Mixin breakpoint</a>
+                    <a href="https://sass-lang.com/documentation/">Sass Documentation</a><br>
+                    <a href="https://github.com/ChrisGibe/til/blob/main/scss/mixin-breakpoint.md">Mixin breakpoint</a><br>
+                    <a href="https://meetup-wp-sass.netlify.app/">Lien des slides</a><br>
                 </section>
 			</div>
 		</div>
